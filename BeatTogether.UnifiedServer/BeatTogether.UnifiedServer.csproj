@@ -24,6 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\dependencies\BeatTogether.DedicatedServer\BeatTogether.DedicatedServer.Instancing\BeatTogether.DedicatedServer.Instancing.csproj" />
     <ProjectReference Include="..\dependencies\BeatTogether.MasterServer\BeatTogether.MasterServer.Api\BeatTogether.MasterServer.Api.csproj" />
+    <ProjectReference Include="..\dependencies\BeatTogether.Status.Api\BeatTogether.Status.Api.csproj" />
   </ItemGroup>
 
   
