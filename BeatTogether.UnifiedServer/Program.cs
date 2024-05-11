@@ -2,13 +2,10 @@
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.DependencyInjection;
-using BeatTogether.MasterServer.NodeController.HttpControllers;
-using BeatTogether.MasterServer.Api.HttpControllers;
-using System.Reflection;
+using BeatTogether.DedicatedServer.Instancing.Extensions;
 
 
-namespace BeatTogether.MasterServer
+namespace BeatTogether.UnifiedServer
 {
     public static class Program
     {
@@ -16,13 +13,7 @@ namespace BeatTogether.MasterServer
             CreateHostBuilder(args).Build().Run();
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args).ConfigureAPIServices().UseMasterServerNodeController().UseMasterServerApi();
+            Host.CreateDefaultBuilder(args).UseDedicatedServerInstancing().UseMasterServerApi();
 
-        public static IHostBuilder ConfigureAPIServices(this IHostBuilder hostBuilder) =>
-            hostBuilder.ConfigureServices(services => services.AddControllers()
-                .AddApplicationPart(Assembly.GetAssembly(typeof(MasterServerController)))
-                .AddApplicationPart(Assembly.GetAssembly(typeof(GetMultiplayerInstanceController)))
-                .AddControllersAsServices()
-            );
     }
 }

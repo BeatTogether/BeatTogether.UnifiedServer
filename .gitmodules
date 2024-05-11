@@ -1,0 +1,21 @@
+[submodule "dependencies/BeatTogether.DedicatedServer.Ignorance"]
+	path = dependencies/BeatTogether.DedicatedServer/BeatTogether.DedicatedServer.Ignorance
+	url = https://github.com/BeatTogether//BeatTogether.DedicatedServer.git
+[submodule "dependencies/BeatTogether.DedicatedServer.Instancing"]
+	path = dependencies/BeatTogether.DedicatedServer/BeatTogether.DedicatedServer.Instancing
+	url = https://github.com/BeatTogether//BeatTogether.DedicatedServer.git
+[submodule "dependencies/BeatTogether.DedicatedServer.Kernel"]
+	path = dependencies/BeatTogether.DedicatedServer/BeatTogether.DedicatedServer.Kernel
+	url = https://github.com/BeatTogether//BeatTogether.DedicatedServer.git
+[submodule "dependencies/BeatTogether.DedicatedServer.Messaging"]
+	path = dependencies/BeatTogether.DedicatedServer/BeatTogether.DedicatedServer.Messaging
+	url = https://github.com/BeatTogether//BeatTogether.DedicatedServer.git
+[submodule "dependencies/BeatTogether.MasterServer.Api"]
+	path = dependencies/BeatTogether.DedicatedServer/BeatTogether.MasterServer.Api
+	url = https://github.com/BeatTogether//BeatTogether.MasterServer.git
+[submodule "dependencies/BeatTogether.MasterServer.Domain"]
+	path = dependencies/BeatTogether.DedicatedServer/BeatTogether.MasterServer.Domain
+	url = https://github.com/BeatTogether//BeatTogether.MasterServer.git
+[submodule "dependencies/BeatTogether.MasterServer.Messaging"]
+	path = dependencies/BeatTogether.DedicatedServer/BeatTogether.MasterServer.Messaging
+	url = https://github.com/BeatTogether//BeatTogether.MasterServer.git
