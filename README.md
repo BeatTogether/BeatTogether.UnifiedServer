@@ -65,7 +65,6 @@ This example config works for hosting your own local server instance.
       }
     ]
   },
-  },
   "Quickplay": {
     "PredefinedPacks": [                       // What level packs can appear in quickplay
       {
