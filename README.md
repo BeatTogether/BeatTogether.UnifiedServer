@@ -10,7 +10,7 @@ Quest: [here](https://github.com/pythonology/BeatTogether.Quest#installation).
 
 ## Feeling adventurous? Want to host your own server?
 
-### All in one Exe server
+### All in one server
 
 Head to the releases tab and download etc etc
 
