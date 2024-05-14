@@ -5,8 +5,8 @@ using BeatTogether.DedicatedServer.Instancing.Extensions;
 using BeatTogether.MasterServer.Api.HttpControllers;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
-using BeatTogether.Status.Api;
-using BeatTogether.Status.Api.Controllers;
+using BeatTogether.Status.Api.Controllers.Extensions;
+using BeatTogether.Status.Api.Controllers.Controllers;
 
 namespace BeatTogether.UnifiedServer
 {
@@ -22,9 +22,9 @@ namespace BeatTogether.UnifiedServer
 
         public static IHostBuilder ConfigureAPIServices(this IHostBuilder hostBuilder) =>
             hostBuilder.ConfigureServices(services => services.AddControllers()
-                .AddApplicationPart(Assembly.GetAssembly(typeof(QuickplayController)))
-                .AddApplicationPart(Assembly.GetAssembly(typeof(StatusController)))
-                .AddApplicationPart(Assembly.GetAssembly(typeof(GetMultiplayerInstanceController)))
+                .AddApplicationPart(Assembly.GetAssembly(typeof(QuickplayController))!)
+                .AddApplicationPart(Assembly.GetAssembly(typeof(StatusController))!)
+                .AddApplicationPart(Assembly.GetAssembly(typeof(GetMultiplayerInstanceController))!)
                 .AddControllersAsServices()
         );
     }
