@@ -120,7 +120,6 @@ If not local, then set every occurance of `127.0.0.1` in the config below, to th
       "ApiUrl": "http://127.0.0.1:8989",
       "StatusUri": "http://127.0.0.1:8989/status",
       "MaxPartySize": 30,
-      "DisableSsl": true
     },
     ...
   ]
