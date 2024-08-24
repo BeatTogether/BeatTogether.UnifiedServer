@@ -1,5 +1,6 @@
 # BeatTogether.UnifiedServer
 A multiplayer private server for the modding community. Supports crossplay between PC and Quest.
+This server works for game versions 1.37.0 and upwards
 
 ## Note
 If you are looking to just play BeatTogether you can download it for your respective platform at the links below. This repository is for contribution to the server that runs the matchmaking services.
@@ -12,7 +13,7 @@ Quest: [here](https://github.com/pythonology/BeatTogether.Quest#installation).
 
 ### All in one server
 
-Head to the releases tab and download etc etc
+Head to the releases tab and download the latest release.
 
 Setting up the config: 
 This example config works for hosting your own local server instance.
@@ -33,7 +34,7 @@ This example config works for hosting your own local server instance.
     }
   },
   "Status": { //Status api configuration
-    "MinimumAppVersion": "1.35.0",             // Minumum game version to join
+    "MinimumAppVersion": "1.37.0",             // Minumum game version to join
     "ServerDisplayName": "BeatTogether server",// The name of your server
     "ServerDescription": "",                   // The description of your server
     "ServerImageUrl": "",                      // The icon displayed for your server
