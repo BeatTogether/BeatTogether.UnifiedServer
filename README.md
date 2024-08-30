@@ -42,7 +42,7 @@ This example config works for hosting your own local server instance.
     "UseSsl": false,                           // Whether this server uses Ssl
     "ServerSupportsPPModifiers": true,         // Whether your server supports the ability for players to select seperate gameplay modifiers
     "ServerSupportsPPDifficulties": true,      // Whether your server supports the ability for players to select their own difficulties in gameplay
-    "ServerSupportsPPMaps": false              // Whether your server supports the ability for players to play different beatmaps at the same time (Currently not used)
+    "ServerSupportsPPMaps": false,              // Whether your server supports the ability for players to play different beatmaps at the same time (Currently not used)
     "RequiredMods": [                          // minimum required mod versions, if installed. Used when we know there is a mod that causes issues with multiplayer, and informs the client to use a newer version of that mod to prevent game crashes
       {
         "id": "MultiplayerCore",
@@ -95,9 +95,9 @@ This example config works for hosting your own local server instance.
   },
   "ServerConfiguration": {
     "HostEndpoint": "127.0.0.1",     // The endpoint that is used to host lobbies
-    "AuthenticateClients": true      // Whether clients should be authenticated
+    "AuthenticateClients": true,      // Whether clients should be authenticated
     "BasePort": 30000,               // The ports for individual lobbies start here
-    "MaximumSlots": 10000            // Max number of lobbies
+    "MaximumSlots": 10000,            // Max number of lobbies
   }
 }
 ```
