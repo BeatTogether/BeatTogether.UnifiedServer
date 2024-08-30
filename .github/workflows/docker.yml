@@ -1,5 +1,12 @@
 name: Docker
 on: push
+
+env:
+  # Use docker.io for Docker Hub if empty
+  REGISTRY: ghcr.io
+  # github.repository as <account>/<repo>
+  IMAGE_NAME: ${{ github.repository }}
+
 jobs:
   docker:
     name: GitHub Packages
@@ -9,7 +16,7 @@ jobs:
       - id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/walzen-group/BeatTogether.UnifiedServer/beat-together-unified-server
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
             type=ref,event=branch
             type=ref,event=pr
