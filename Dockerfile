@@ -8,10 +8,9 @@ COPY . .
 RUN dotnet clean BeatTogether.UnifiedServer.sln -c Release
 
 # Build for linux x64 for now (no multiarch support yet)
-RUN dotnet publish BeatTogether.UnifiedServer.sln -p:PublishReadyToRun=true -p:PublishTrimmed=false -p:TargetFramework=net6.0 -r linux-x64 -o /tmp/out
+RUN dotnet publish BeatTogether.UnifiedServer.sln -c Release -p:PublishReadyToRun=true -p:PublishTrimmed=false -p:TargetFramework=net6.0 -r linux-x64 -o /tmp/out
 
 # Stage 2: Create a new runtime container
-# FROM mcr.microsoft.com/dotnet/runtime:6.0 AS runtime
 FROM mcr.microsoft.com/dotnet/runtime:6.0 AS runtime
 
 WORKDIR /app
