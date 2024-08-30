@@ -1,0 +1,4 @@
+*.pdb
+*.Development.json
+**bin
+**obj
