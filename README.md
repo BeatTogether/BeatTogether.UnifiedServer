@@ -24,7 +24,7 @@ Make sure the following ports are accessible by the game
 | 8989          | tcp      | master endoint      |
 | 30000-30500   | udp      | dedicated endpoints |
 
-Setting up the config: 
+### Setting up the config
 This example config works for hosting your own local server instance.
 
 `appsettings.json`
