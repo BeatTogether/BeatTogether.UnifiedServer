@@ -118,7 +118,7 @@ You will need to port forward the port `8989` (The port in the api url) and all 
 #### BeatTogether Mod Configuration
 If not local, then set every occurance of `127.0.0.1` in the config below, to the `HostEndpoint` from the configuration above
 
-`BeatTogether.json` in `BeatSaber/Userdata/`
+`BeatTogether.json` in `BeatSaber/Userdata/` (For PC) `/sdcard/ModData/com.beatgames.beatsaber/Configs/` (For Quest)
 ```
 {
   ...
