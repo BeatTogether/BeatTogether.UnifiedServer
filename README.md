@@ -18,11 +18,10 @@ Head to the releases tab and download the latest release.
 ### Ports
 Make sure the following ports are accessible by the game
 
-| Ports         | Protocol | Type                |
-| ------------- | -------- | ------------------- |
-| 80            | tcp      | Status endpoint     |
-| 8989          | tcp      | master endoint      |
-| 30000-30500   | udp      | dedicated endpoints |
+| Ports         | Protocol | Type                  |
+| ------------- | -------- | --------------------- |
+| 8989          | tcp      | master/status endoint |
+| 30000-30500   | udp      | dedicated endpoints   |
 
 ### Setting up the config
 This example config works for hosting your own local server instance.
